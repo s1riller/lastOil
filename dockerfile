@@ -13,7 +13,7 @@ COPY package*.json ./
 RUN npm install
 
 # копируем файлы и каталоги проекта в текущий рабочий каталог (т.е. в каталог 'app')
-COPY . .
+# COPY . .
 
 # собираем приложение для production с минификацией
 RUN npm run build
